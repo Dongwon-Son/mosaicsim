@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://dongwon-son.github.io/mosaicsim/">
   <title>MosaicSim · Multi-Engine Neural Simulation</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%236554c0'/%3E%3Cpath d='M14 46V18l18 18 18-18v28' fill='none' stroke='white' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=site19">
+  <link rel="stylesheet" href="styles.css?v=site20">
   <script defer src="script.js?v=site16"></script>
 </head>
 <body>
@@ -45,13 +45,19 @@
         <button class="button secondary" type="button" disabled>Read the paper <span aria-hidden="true">↗</span></button>
       </div>
       <figure class="hero-film" id="overview">
-        <video id="overview-video" controls playsinline preload="metadata" poster="assets/geometry.jpg?v=video17" aria-label="MosaicSim showcase film">
-          <source src="assets/mosaicsim-film.mp4?v=video21" type="video/mp4">
-          <a href="assets/mosaicsim-film.mp4?v=video21">Download the combined film</a>.
+        <video id="overview-video" controls playsinline preload="metadata" poster="assets/geometry.jpg?v=video22" aria-label="MosaicSim showcase film">
+          <source src="assets/mosaicsim-film.mp4?v=video22" type="video/mp4">
+          <a href="assets/mosaicsim-film.mp4?v=video22">Download the combined film</a>.
         </video>
       </figure>
       <section class="transfer-film" id="transfer" aria-labelledby="transfer-title">
         <h2 id="transfer-title">Policy transfer</h2>
+        <p class="transfer-description">
+          <strong>One learned dynamics model across robot types.</strong>
+          We freeze MosaicSim’s shared weights and train only the walking policy for each robot with PPO.
+          The resulting policy runs in MuJoCo or on real hardware.
+          The clips use different saved versions of the shared weights.
+        </p>
         <figure class="hero-film">
           <video id="transfer-video" controls playsinline preload="metadata" poster="assets/transfer.jpg?v=transfer1" aria-label="MosaicSim sim-to-sim and sim-to-real transfer film">
             <source src="assets/mosaicsim-transfer.mp4?v=transfer1" type="video/mp4">

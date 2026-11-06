@@ -4,7 +4,7 @@
   "simulated_horizon_seconds": 2,
   "repeats": 5,
   "baseline_seconds": 0.8680724140722305,
-  "baseline": "PhysX with basic G1 shapes on flat ground",
+  "baseline": "PhysX on flat ground with primitive collision shapes",
   "mixed_population": [
     "G1",
     "H2",
@@ -25,7 +25,7 @@
     {
       "method": "ovphysx",
       "case": "primitive_flat",
-      "title": "G1 with basic shapes on flat ground",
+      "title": "Primitive collision shapes on flat ground",
       "badge": "PhysX",
       "route": "native_clone",
       "version": "0.7.0.74035321",
@@ -43,13 +43,12 @@
       "video_duration": 4.0,
       "capped": false,
       "shown_in_film": true,
-      "playback_rate": 1.0,
-      "description": "17 rounded cylinders, 2 balls, and 2 boxes per robot"
+      "playback_rate": 1.0
     },
     {
       "method": "ovphysx",
       "case": "primitive_rough",
-      "title": "G1 with basic shapes on rough ground",
+      "title": "Primitive collision shapes on rough ground",
       "badge": "PhysX",
       "route": "native_clone",
       "version": "0.7.0.74035321",
@@ -67,13 +66,12 @@
       "video_duration": 4.0,
       "capped": true,
       "shown_in_film": true,
-      "playback_rate": 0.5946996339471643,
-      "description": "17 rounded cylinders, 2 balls, and 2 boxes per robot"
+      "playback_rate": 0.5946996339471643
     },
     {
       "method": "ovphysx",
       "case": "convex_rough",
-      "title": "G1 with detailed shapes on rough ground",
+      "title": "Detailed collision shapes on rough ground",
       "badge": "PhysX",
       "route": "native_clone",
       "version": "0.7.0.74035321",
@@ -91,13 +89,12 @@
       "video_duration": 4.0,
       "capped": true,
       "shown_in_film": true,
-      "playback_rate": 0.25557376722724084,
-      "description": "324 fitted 3D pieces per robot to detect contact"
+      "playback_rate": 0.25557376722724084
     },
     {
       "method": "mosaic",
       "case": "convex_rough",
-      "title": "G1 with detailed shapes on rough ground",
+      "title": "Detailed collision shapes on rough ground",
       "badge": "MosaicSim",
       "route": "fp32_normal_refined",
       "version": null,
@@ -114,13 +111,12 @@
       "video_start": null,
       "video_duration": null,
       "capped": false,
-      "shown_in_film": false,
-      "description": "324 fitted 3D pieces per robot to detect contact"
+      "shown_in_film": false
     },
     {
       "method": "ovphysx",
       "case": "heterogeneous",
-      "title": "Four robot models on rough ground",
+      "title": "G1, H2, Go2, and ANYmal-C on rough ground",
       "badge": "PhysX",
       "route": "grouped",
       "version": "0.7.0.74035321",
@@ -138,13 +134,12 @@
       "video_duration": 4.0,
       "capped": true,
       "shown_in_film": true,
-      "playback_rate": 0.23322182574111308,
-      "description": "32 separate simulations each of G1, H2, Go2, and ANYmal-C"
+      "playback_rate": 0.23322182574111308
     },
     {
       "method": "mosaic",
       "case": "heterogeneous",
-      "title": "Four robot models on rough ground",
+      "title": "G1, H2, Go2, and ANYmal-C on rough ground",
       "badge": "MosaicSim",
       "route": "fp32_normal_refined",
       "version": null,
@@ -162,8 +157,7 @@
       "video_duration": 3.68,
       "capped": false,
       "shown_in_film": true,
-      "playback_rate": 1.0854396275487121,
-      "description": "32 separate simulations each of G1, H2, Go2, and ANYmal-C"
+      "playback_rate": 1.0854396275487121
     }
   ],
   "timing_sources": [

@@ -1,0 +1,174 @@
+{
+  "batch": 128,
+  "hardware": "NVIDIA RTX 5090 on Machine1",
+  "simulated_horizon_seconds": 2,
+  "repeats": 5,
+  "baseline_seconds": 0.8680724140722305,
+  "baseline": "OVPhysX 0.7 primitive G1 on flat terrain",
+  "mosaic_primitive_unsupported": true,
+  "mixed_population": [
+    "G1",
+    "H2",
+    "Go2",
+    "ANYmal-C"
+  ],
+  "worlds_per_mixed_robot": 32,
+  "timing_scope": "Independent warmed benchmark medians. Footage is illustrative and comes from separate saved rollouts.",
+  "playback": {
+    "fps": 25,
+    "cap_seconds": 4,
+    "formula": "For measured time ratio R, playback rate is 1/R. Display frames = min(100, round(100R)). Source frame for display frame i is floor(i/R).",
+    "real_time_cases": [
+      "ovphysx/primitive_flat"
+    ]
+  },
+  "rows": [
+    {
+      "method": "ovphysx",
+      "case": "primitive_flat",
+      "title": "Primitive G1 on flat terrain",
+      "badge": "OVPhysX 0.7 \u00b7 Native clone",
+      "route": "native_clone",
+      "version": "0.7.0.74035321",
+      "median_seconds": 0.8680724140722305,
+      "samples_seconds": [
+        0.8688478680560365,
+        0.8680724140722305,
+        0.8678587659960613,
+        0.8682181719923392,
+        0.8678804760565981
+      ],
+      "relative_wall_time": 1.0,
+      "throughput_vs_ovphysx": null,
+      "video_start": 0.0,
+      "video_duration": 4.0,
+      "capped": false,
+      "shown_in_film": true,
+      "playback_rate": 1.0
+    },
+    {
+      "method": "ovphysx",
+      "case": "primitive_rough",
+      "title": "Primitive G1 on rough terrain",
+      "badge": "OVPhysX 0.7 \u00b7 Native clone",
+      "route": "native_clone",
+      "version": "0.7.0.74035321",
+      "median_seconds": 1.4596821059240028,
+      "samples_seconds": [
+        1.4492075520101935,
+        1.4596821059240028,
+        1.4543606049846858,
+        1.4757075100205839,
+        1.4634121819399297
+      ],
+      "relative_wall_time": 1.6815211291837524,
+      "throughput_vs_ovphysx": null,
+      "video_start": 4.0,
+      "video_duration": 4.0,
+      "capped": true,
+      "shown_in_film": true,
+      "playback_rate": 0.5946996339471643
+    },
+    {
+      "method": "ovphysx",
+      "case": "convex_rough",
+      "title": "Convex G1 on rough terrain",
+      "badge": "OVPhysX 0.7 \u00b7 Native clone",
+      "route": "native_clone",
+      "version": "0.7.0.74035321",
+      "median_seconds": 3.3965630490565673,
+      "samples_seconds": [
+        3.6384585379855707,
+        3.3015422080643475,
+        3.323990633012727,
+        3.449132028967142,
+        3.3965630490565673
+      ],
+      "relative_wall_time": 3.91276464266718,
+      "throughput_vs_ovphysx": null,
+      "video_start": 8.0,
+      "video_duration": 4.0,
+      "capped": true,
+      "shown_in_film": true,
+      "playback_rate": 0.25557376722724084
+    },
+    {
+      "method": "mosaic",
+      "case": "convex_rough",
+      "title": "Convex G1 on rough terrain",
+      "badge": "MosaicSim \u00b7 FP32 refined",
+      "route": "fp32_normal_refined",
+      "version": null,
+      "median_seconds": 0.8400136549025774,
+      "samples_seconds": [
+        0.8398282470880076,
+        0.8417605579597875,
+        0.8400136549025774,
+        0.83945870003663,
+        0.8400434050709009
+      ],
+      "relative_wall_time": 0.967676937183125,
+      "throughput_vs_ovphysx": 4.043461709501011,
+      "video_start": null,
+      "video_duration": null,
+      "capped": false,
+      "shown_in_film": false
+    },
+    {
+      "method": "ovphysx",
+      "case": "heterogeneous",
+      "title": "Mixed robots on rough terrain",
+      "badge": "OVPhysX 0.7 \u00b7 Grouped by robot type",
+      "route": "grouped",
+      "version": "0.7.0.74035321",
+      "median_seconds": 3.722089093993418,
+      "samples_seconds": [
+        3.701672700000927,
+        3.8359564129495993,
+        3.737545471987687,
+        3.6622167910682037,
+        3.722089093993418
+      ],
+      "relative_wall_time": 4.28776336358007,
+      "throughput_vs_ovphysx": null,
+      "video_start": 12.0,
+      "video_duration": 4.0,
+      "capped": true,
+      "shown_in_film": true,
+      "playback_rate": 0.23322182574111308
+    },
+    {
+      "method": "mosaic",
+      "case": "heterogeneous",
+      "title": "Mixed robots on rough terrain",
+      "badge": "MosaicSim \u00b7 FP32 refined",
+      "route": "fp32_normal_refined",
+      "version": null,
+      "median_seconds": 0.7997426959918812,
+      "samples_seconds": [
+        0.7874727529706433,
+        0.8021299840183929,
+        0.7997426959918812,
+        0.8063314530299976,
+        0.7958410229766741
+      ],
+      "relative_wall_time": 0.9212856934828668,
+      "throughput_vs_ovphysx": 4.654108268381364,
+      "video_start": 16.0,
+      "video_duration": 3.68,
+      "capped": false,
+      "shown_in_film": true,
+      "playback_rate": 1.0854396275487121
+    }
+  ],
+  "timing_sources": [
+    {
+      "method": "OVPhysX 0.7",
+      "verified_samples_receipt_sha256": "77abe4521d2277f426f1d9fe23265349897d402cf76e4febbe6088c3d0263d07"
+    },
+    {
+      "method": "MosaicSim FP32 refined",
+      "verified_samples_receipt_sha256": "d57208c68cbd0c2e204cf67179181a8fef09559b486bc9cdd7f88cc2548abedc"
+    }
+  ]
+}

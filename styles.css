@@ -39,3 +39,8 @@
 
 /* The common primitive-flat reference makes recovery readable across scenes. */
 .timings th:nth-child(2),.timings td:nth-child(2){text-align:right;white-space:nowrap;padding-left:15px}.timings td:nth-child(2){font-size:17px;font-variant-numeric:tabular-nums}.timings td.normalized-cost{font-size:17px;padding-left:22px}.timings th:last-child{font-size:9px}.timings .ours .normalized-cost{font-weight:600}@media(max-width:720px){.timings td:nth-child(2),.timings td.normalized-cost{font-size:15px;padding-left:12px}.timings th:last-child{font-size:8px}.timings button{gap:8px;font-size:11px}}
+
+.authors sup,.affiliation sup{font-size:.65em;line-height:0;position:relative;vertical-align:super}
+.authors sup{margin-left:.12em}
+.affiliation{display:flex;justify-content:center;flex-wrap:wrap;gap:.2em 1.4em}
+.affiliation span{white-space:nowrap}

@@ -10,39 +10,56 @@
   <meta property="og:image" content="https://dongwon-son.github.io/mosaicsim/assets/hero.jpg">
   <link rel="canonical" href="https://dongwon-son.github.io/mosaicsim/">
   <title>MosaicSim: Fast Multi-Engine Neural Simulation</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%236554c0'/%3E%3Cpath d='M14 46V18l18 18 18-18v28' fill='none' stroke='white' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=site20">
-  <script defer src="script.js?v=site16"></script>
+  <link rel="icon" href="assets/mosaicsim-symbol.svg?v=logo1" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=site22">
+  <script defer src="script.js?v=site18"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="header">
-    <a class="wordmark" href="#" aria-label="MosaicSim home"><span class="mark" aria-hidden="true">M</span>MosaicSim</a>
+    <a class="wordmark" href="#" aria-label="MosaicSim home"><img class="brand-symbol" src="assets/mosaicsim-symbol.svg?v=logo1" width="29" height="29" alt="">MosaicSim</a>
     <span class="institution">KAIST <span aria-hidden="true">/</span> Robotics research</span>
   </header>
 
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
-      <p class="eyebrow">Multi-engine neural simulation</p>
-      <h1 id="hero-title">Mosaic<span>Sim</span></h1>
-      <p class="hero-subtitle">Fast Multi-Engine Neural Simulation</p>
-      <p class="authors">
-        <span class="author-pair">
-          <a href="https://dongwon-son.github.io/" target="_blank" rel="noopener noreferrer">Dongwon Son<sup>1</sup></a>
-          <span class="author-dot" aria-hidden="true">·</span>
-          <a href="https://www.hugelab.org/people/#intern-container" target="_blank" rel="noopener noreferrer">Minseok Lee<sup>1</sup></a>
-        </span>
-        <span class="author-dot author-divider" aria-hidden="true">·</span>
-        <span class="author-pair">
-          <a href="https://www.hojins.life/" target="_blank" rel="noopener noreferrer">Hojin Jung<sup>2</sup></a>
-          <span class="author-dot" aria-hidden="true">·</span>
-          <a href="https://beomjoonkim.github.io/" target="_blank" rel="noopener noreferrer">Beomjoon Kim<sup>1</sup></a>
-        </span>
-      </p>
-      <p class="affiliation"><span><sup>1</sup> KAIST</span><span><sup>2</sup> Ludo Robotics</span></p>
-      <div class="hero-actions">
-        <a class="button primary" href="#overview" data-play="overview-video"><span aria-hidden="true">▶</span> Watch the film</a>
-        <button class="button secondary" type="button" disabled>Read the paper <span aria-hidden="true">↗</span></button>
+      <div class="hero-intro">
+        <div class="hero-backdrop" aria-hidden="true">
+          <img src="assets/hero-dense.jpg?v=hero2" width="1920" height="1080" alt="" fetchpriority="high" decoding="async">
+          <video id="hero-background" autoplay muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture disableremoteplayback>
+            <source data-src="assets/hero-dense.webm?v=hero2" type="video/webm">
+            <source data-src="assets/hero-dense.mp4?v=hero2" type="video/mp4">
+          </video>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Multi-engine neural simulation</p>
+          <h1 id="hero-title"><img class="hero-symbol" src="assets/mosaicsim-symbol.svg?v=logo1" width="88" height="88" alt=""><span class="hero-name">Mosaic<span>Sim</span></span></h1>
+          <p class="hero-subtitle">Fast Multi-Engine Neural Simulation</p>
+          <p class="authors">
+            <span class="author-pair">
+              <a href="https://dongwon-son.github.io/" target="_blank" rel="noopener noreferrer">Dongwon Son<sup>1</sup></a>
+              <span class="author-dot" aria-hidden="true">·</span>
+              <a href="https://www.hugelab.org/people/#intern-container" target="_blank" rel="noopener noreferrer">Minseok Lee<sup>1</sup></a>
+            </span>
+            <span class="author-dot author-divider" aria-hidden="true">·</span>
+            <span class="author-pair">
+              <a href="https://www.hojins.life/" target="_blank" rel="noopener noreferrer">Hojin Jung<sup>2</sup></a>
+              <span class="author-dot" aria-hidden="true">·</span>
+              <a href="https://beomjoonkim.github.io/" target="_blank" rel="noopener noreferrer">Beomjoon Kim<sup>1</sup></a>
+            </span>
+          </p>
+          <p class="affiliation"><span><sup>1</sup> KAIST</span><span><sup>2</sup> Ludo Robotics</span></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#overview" data-play="overview-video"><span aria-hidden="true">▶</span> Watch the film</a>
+            <button class="button secondary" type="button" disabled>Read the paper <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <button class="hero-motion-toggle" type="button" aria-label="Pause background animation" aria-controls="hero-background" hidden>
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path class="motion-pause" d="M4 3h3v10H4zm5 0h3v10H9z"/>
+            <path class="motion-play" d="M5 3l8 5-8 5z"/>
+          </svg>
+        </button>
       </div>
       <figure class="hero-film" id="overview">
         <video id="overview-video" controls playsinline preload="metadata" poster="assets/geometry.jpg?v=video24" aria-label="MosaicSim showcase film">

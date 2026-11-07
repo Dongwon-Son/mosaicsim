@@ -81,3 +81,5 @@ main{overflow-x:clip}
 .paper-overview{margin-top:clamp(36px,6vw,72px);scroll-margin-top:24px}
 .paper-overview a{display:block;cursor:zoom-in;border-radius:5px}
 .paper-overview img{display:block;width:100%;height:auto;border-radius:5px;background:white}
+
+.paper-overview h2{margin-bottom:24px;font-size:clamp(24px,3.2vw,38px);font-weight:600;letter-spacing:-.035em}

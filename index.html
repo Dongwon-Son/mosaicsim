@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://dongwon-son.github.io/mosaicsim/">
   <title>MosaicSim: Fast Multi-Engine Neural Simulation</title>
   <link rel="icon" href="assets/mosaicsim-symbol.svg?v=logo1" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=site24">
+  <link rel="stylesheet" href="styles.css?v=site25">
   <script defer src="script.js?v=site18"></script>
 </head>
 <body>
@@ -72,6 +72,11 @@
         <a href="assets/mosaicsim-overview.pdf?v=figure1" target="_blank" rel="noopener noreferrer" aria-label="Open the MosaicSim overview figure at full resolution">
           <img src="assets/mosaicsim-overview.webp?v=figure1" width="3200" height="1194" loading="lazy" decoding="async" alt="MosaicSim overview: trajectories from four physics engines train one shared simulator; physical calibration and fine-tuning adapt it to real data; parallel rollouts train a policy that transfers to real G1 hardware.">
         </a>
+        <figcaption id="overview-explanation" class="overview-description">
+          Trajectories from MuJoCo, PhysX, PyBullet, and RaiSim train <strong>one shared MosaicSim model</strong>.
+          Physical parameters and an engine identifier let it represent different contact behaviors, while calibration and fine-tuning adapt it to real-world data.
+          During PPO training, <strong>MosaicSim’s weights stay fixed</strong>; fast parallel rollouts train walking policies that transfer to MuJoCo or real G1 hardware.
+        </figcaption>
       </figure>
       <section class="transfer-film" id="transfer" aria-labelledby="transfer-title">
         <h2 id="transfer-title">Policy transfer</h2>

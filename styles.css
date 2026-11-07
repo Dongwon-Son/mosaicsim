@@ -83,3 +83,7 @@ main{overflow-x:clip}
 .paper-overview img{display:block;width:100%;height:auto;border-radius:5px;background:white}
 
 .paper-overview h2{margin-bottom:24px;font-size:clamp(24px,3.2vw,38px);font-weight:600;letter-spacing:-.035em}
+
+.overview-description{max-width:94ch;margin:22px auto 0;text-align:left;color:var(--muted);font-size:16px;line-height:1.7}
+.overview-description strong{color:var(--ink);font-weight:600}
+@media(max-width:720px){.overview-description{font-size:14px;margin-top:18px}}

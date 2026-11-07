@@ -77,3 +77,7 @@ main{overflow-x:clip}
 @media(min-width:1600px){.hero-backdrop{top:-90px}}
 @media(max-width:720px){.hero-intro{padding-bottom:31px}.hero h1{font-size:clamp(50px,15.3vw,82px);gap:.16em}.hero-backdrop{top:-50px;opacity:.32}.hero-motion-toggle{right:0;bottom:1px;width:26px;height:26px}}
 @media(prefers-reduced-motion:reduce){.hero-backdrop video{display:none}}
+
+.paper-overview{margin-top:clamp(36px,6vw,72px);scroll-margin-top:24px}
+.paper-overview a{display:block;cursor:zoom-in;border-radius:5px}
+.paper-overview img{display:block;width:100%;height:auto;border-radius:5px;background:white}

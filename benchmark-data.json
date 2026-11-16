@@ -95,7 +95,7 @@
       "method": "mosaic",
       "case": "convex_rough",
       "title": "Detailed collision shapes on rough ground",
-      "badge": "MosaicSim",
+      "badge": "PaletteSim",
       "route": "fp32_normal_refined",
       "version": null,
       "median_seconds": 0.8400136549025774,
@@ -140,7 +140,7 @@
       "method": "mosaic",
       "case": "heterogeneous",
       "title": "G1, H2, Go2, and ANYmal-C on rough ground",
-      "badge": "MosaicSim",
+      "badge": "PaletteSim",
       "route": "fp32_normal_refined",
       "version": null,
       "median_seconds": 0.7997426959918812,
@@ -166,7 +166,7 @@
       "verified_samples_receipt_sha256": "77abe4521d2277f426f1d9fe23265349897d402cf76e4febbe6088c3d0263d07"
     },
     {
-      "method": "MosaicSim FP32 refined",
+      "method": "PaletteSim FP32 refined",
       "verified_samples_receipt_sha256": "d57208c68cbd0c2e204cf67179181a8fef09559b486bc9cdd7f88cc2548abedc"
     }
   ]

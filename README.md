@@ -2,9 +2,9 @@
 
 Fast Multi-Engine Neural Simulation
 
-[Project page](https://dongwon-son.github.io/mosaicsim/)
+[Project page](https://dongwon-son.github.io/palettesim/)
 
-GitHub Pages serves this static site from the root of the main branch. The existing URL is retained.
+GitHub Pages serves this static site from the root of the main branch. The project URL follows the PaletteSim repository name.
 
 The title, header, and favicon use the approved PaletteSim icon. Its web derivative trims transparent margins and resizes the original; the original is preserved in `assets/palettesim-icon-original.png`.
 
